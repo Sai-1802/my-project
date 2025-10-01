@@ -1,0 +1,41 @@
+.app {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+  font-family: system-ui, sans-serif;
+  color: #111; /* default text color */
+  /* app background set to white */
+  background: white;
+}
+
+h1 { text-align: center; margin-bottom: 16px; color: #222; }
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.movie-card {
+  border: 1px solid #e9e6e1; /* softer border */
+  padding: 12px;
+  border-radius: 6px;
+  background: white; /* card background set to white */
+  box-shadow: 0 1px 6px rgba(15,15,15,0.04);
+}
+
+.movie-title {
+  margin: 0 0 8px 0;
+  color: #111;       /* ensure visible */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: #e64646;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

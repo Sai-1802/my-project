@@ -1,0 +1,78 @@
+/* Basic layout */
+.app {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.toolbar input[type="search"] {
+  width: 320px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.clear-btn {
+  background: #888;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Result count and empty text */
+.result-count {
+  text-align: center;
+  color: #444;
+  margin: 6px 0 12px;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+}
+
+/* Grid and card */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.card-title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.card-meta {
+  margin: 0;
+  color: #444;
+  font-size: 0.94rem;
+}
