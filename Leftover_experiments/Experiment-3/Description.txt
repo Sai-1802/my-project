@@ -1,0 +1,68 @@
+ADMIN DASHBOARD LAYOUT WITH CSS GRID AND THEME TOGGLING
+
+LAYOUT STRUCTURE & FEATURES
+1.SECTION: Header
+Purpose: Displays the title of the dashboard and contains a dark mode toggle.
+Elements:
+<h3> element for title: “Admin Dashboard”.
+<label> and <input type="checkbox"> used for toggling between light and dark modes.
+Positioning: Spans both columns in the grid layout using grid-column: 1 / span 2.
+
+Flex Layout: Uses display: flex; justify-content: space-around; for alignment.
+
+Theming: Background color is controlled via a CSS variable (--bg-color-header).
+
+2.SECTION: Navigation Sidebar (nav)
+Purpose: Provides vertical navigation links for dashboard pages.
+Links Included:
+
+Home
+Users
+Settings
+
+Styling:
+display: flex; flex-direction: column; for vertical stacking.
+Light gray background with border for clear separation.
+
+3.SECTION: Main Content
+Purpose: Displays welcome message and acts as placeholder for content such as reports, charts, etc.
+Content:
+<h2> and <h3> elements displaying a message.
+Styling: Simple white background with border to maintain clean visual structure.
+
+4.SECTION: Footer
+Purpose: Displays footer information.
+Content: “©2025 Admin Panel”
+Styling: Lime green background, centered text, and consistent padding.
+Layout: Spans both columns in grid.
+
+CSS GRID LAYOUT OVERVIEW
+Element: .Dashboard
+Display: grid
+Grid Template:
+Columns: 200px 1fr (sidebar + main)
+Rows: 80px 1fr 50px (header, main, footer)
+Height: 100vh (fills entire viewport)
+
+THEME SWITCHING (PREPARATION)
+Toggle Control:
+Checkbox (#toggle) hidden via display: none;
+Intended to enable dark mode switching when checked.
+
+CSS Variable for Header:
+Declared using :root { --bg-color-header: green; }
+Used within header { background-color: var(--bg-color-header); }
+
+Note: The dark mode logic is not yet fully implemented; the toggle and variable setup provide the groundwork.
+
+HTML STRUCTURE RECAP
+Uses semantic tags: <header>, <nav>, <main>, <footer>
+Includes external stylesheet styles.css
+Structured for modular and scalable interface development
+
+LEARNING OUTCOMES
+1.Understand how to use CSS Grid for building responsive web page layouts.
+2.Learn the use of CSS custom properties (variables) for dynamic theming and maintainability.
+3.Practice semantic HTML5 structuring for accessibility and clarity.
+4.Implement layout planning that supports scalability for larger dashboard systems.
+5.Prepare layout and variables for theme switching without JavaScript.
